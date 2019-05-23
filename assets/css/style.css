@@ -48,6 +48,8 @@ body {
   h2,
   h3 {
     font-size: 22px;
+    animation-name: logocolor;
+    animation-duration: 4s;
   }
   
   /* header */
@@ -77,6 +79,13 @@ body {
     text-align: center;
     text-decoration: none;
     background: #4aaaa5;
+    animation-name: logocolor;
+    animation-duration: 4s;
+  }
+
+  @keyframes logocolor {
+    from{background-color: #4aaaa5;}
+    to {background-color: #666666;}
   }
   
   nav {
