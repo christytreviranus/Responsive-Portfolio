@@ -55,9 +55,11 @@ body {
   #masthead {
     position: fixed;
     z-index: 99;
+    top: 0px;
+    left: 0px;
     width: 100%;
     margin: 0 0 30px;
-    /* overflow: auto;  -- This is causing a scroll on the right side, removed as a result*/
+    overflow: auto;  
     color: #ffffff;
     background: #ffffff;
     border-bottom: 2px solid #cccccc;
@@ -68,7 +70,7 @@ body {
     width: 250px;
     height: 90px;
     font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 90px;
     color: #ffffff;
@@ -216,3 +218,21 @@ body {
     border: 0 none;
   }
   
+  @media only screen and (max-width:980px) {
+    #masthead {
+      padding: 0 20px 0 20px;
+
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #masthead {
+      padding: 0 20px 0 20px;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    #masthead {
+      padding: 0 20px 0 20px;
+    }
+  }
